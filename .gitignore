@@ -1,3 +1,13 @@
+*.bak*
+work/
+db/
+.qsys_edit/
+incremental_db/
+.metadata/
+.settings/
+RemoteSystemsTempFiles/
+
+
 # Prerequisites
 *.d
 
