@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="bfa0d2614c3cf8b0abe3"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="CST455_Final.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="CST455_Final_HPS:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME CST455_Final_HPS HAS_SOPCINFO 1 GENERATION_ID 1702169647"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

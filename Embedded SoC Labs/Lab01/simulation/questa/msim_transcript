@@ -1,0 +1,392 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.1 win64 Jan 23 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do lab01_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.1 Lib Mapping Utility 2023.01 Jan 23 2023
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/23.2/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01 {C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01/Hex_to_7Seg.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:22:30 on Oct 05,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01" C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01/Hex_to_7Seg.v 
+# -- Compiling module Hex_to_7Seg
+# 
+# Top level modules:
+# 	Hex_to_7Seg
+# End time: 09:22:30 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+pwd
+# C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01/simulation/questa
+do testbench.tcl
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:23:15 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:23:15 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:23:15 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:23:15 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work 
+# Start time: 09:23:15 on Oct 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.testbench(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/num'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/seg'.
+# Executing ONERROR command at macro ./wave.do line 5
+vsim work.testbench
+# End time: 09:23:51 on Oct 05,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 09:23:51 on Oct 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.testbench(fast)
+quit -sim
+# End time: 09:24:33 on Oct 05,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+vsim work.Hex_to_7Seg
+# vsim work.Hex_to_7Seg 
+# Start time: 09:24:35 on Oct 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.Hex_to_7Seg(fast)
+quit -sim
+# End time: 09:24:48 on Oct 05,2023, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01/simulation/questa/testbench.v
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:26:06 on Oct 05,2023
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab01/simulation/questa/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:26:06 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work._opt2
+# vsim work._opt2 
+# Start time: 09:26:06 on Oct 05,2023
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt2" will not cause it to be locked.
+# Loading work.Hex_to_7Seg(fast)
+quit -sim
+# End time: 09:26:31 on Oct 05,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 1
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 09:26:33 on Oct 05,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+quit -sim
+# End time: 09:27:04 on Oct 05,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:27:35 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:27:35 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:27:35 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:27:35 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work 
+# Start time: 09:27:35 on Oct 05,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/num'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/seg'.
+# Executing ONERROR command at macro ./wave.do line 5
+quit -sim
+# End time: 09:28:03 on Oct 05,2023, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+quit -sim
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+vlog ../../*.v
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:29:44 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:29:44 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog *.v
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:30:07 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:30:07 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:31:34 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:31:34 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:31:34 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:31:34 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:31:34 on Oct 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/num'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/seg'.
+# Executing ONERROR command at macro ./wave.do line 5
+quit -sim
+# End time: 09:32:09 on Oct 05,2023, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 1
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:32:42 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:32:42 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:32:42 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:32:42 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:32:42 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/num'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/U1/seg'.
+# Executing ONERROR command at macro ./wave.do line 5
+add wave sim:/testbench/*
+do testbench.tcl
+# End time: 09:34:04 on Oct 05,2023, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:34:04 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:34:04 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:34:04 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:34:04 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:34:04 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/segs'.
+# Executing ONERROR command at macro ./wave.do line 5
+do testbench.tcl
+# End time: 09:35:20 on Oct 05,2023, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:35:20 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:35:20 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:35:20 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:35:20 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:35:20 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/segs'.
+# Executing ONERROR command at macro ./wave.do line 5
+do testbench.tcl
+# End time: 09:36:39 on Oct 05,2023, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:36:39 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:36:39 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:36:39 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:36:39 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:36:39 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+do testbench.tcl
+# End time: 09:38:40 on Oct 05,2023, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:38:41 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:38:41 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:38:41 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:38:41 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:38:41 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+do testbench.tcl
+# End time: 09:40:25 on Oct 05,2023, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:40:25 on Oct 05,2023
+# vlog -reportprogress 300 ../../Hex_to_7Seg.v ../../lab01.v 
+# -- Compiling module Hex_to_7Seg
+# -- Compiling module lab01
+# 
+# Top level modules:
+# 	lab01
+# End time: 09:40:25 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 09:40:25 on Oct 05,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 09:40:25 on Oct 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 09:40:26 on Oct 05,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.testbench(fast)
+# Loading work.Hex_to_7Seg(fast)
+# Causality operation skipped due to absence of debug database file
+# End time: 10:12:30 on Oct 05,2023, Elapsed time: 0:32:04
+# Errors: 4700, Warnings: 0

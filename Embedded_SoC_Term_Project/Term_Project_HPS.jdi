@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="be2c3348ab946edd47a9"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="Term_Project_HPS.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="TermProject:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME TermProject HAS_SOPCINFO 1 GENERATION_ID 1701639302"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

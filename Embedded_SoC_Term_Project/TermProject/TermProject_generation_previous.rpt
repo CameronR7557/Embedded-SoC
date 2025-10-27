@@ -1,0 +1,118 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Term_Project\TermProject.qsys --block-symbol-file --output-directory=C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Term_Project\TermProject --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Term_Project/TermProject.qsys
+Progress: Reading input file
+Progress: Adding ClockDivider_0 [ClockDivider 1.0]
+Progress: Parameterizing module ClockDivider_0
+Progress: Adding SevenSegDecoder_0 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_0
+Progress: Adding SevenSegDecoder_1 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_1
+Progress: Adding SevenSegDecoder_2 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_2
+Progress: Adding SevenSegDecoder_3 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_3
+Progress: Adding SevenSegDecoder_4 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_4
+Progress: Adding SevenSegDecoder_5 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_5
+Progress: Adding UART_RX_0 [UART_RX 1.0]
+Progress: Parameterizing module UART_RX_0
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 22.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: TermProject.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: TermProject.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: TermProject.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: TermProject.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Term_Project\TermProject.qsys --synthesis=VERILOG --output-directory=C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Term_Project\TermProject\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Term_Project/TermProject.qsys
+Progress: Reading input file
+Progress: Adding ClockDivider_0 [ClockDivider 1.0]
+Progress: Parameterizing module ClockDivider_0
+Progress: Adding SevenSegDecoder_0 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_0
+Progress: Adding SevenSegDecoder_1 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_1
+Progress: Adding SevenSegDecoder_2 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_2
+Progress: Adding SevenSegDecoder_3 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_3
+Progress: Adding SevenSegDecoder_4 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_4
+Progress: Adding SevenSegDecoder_5 [SevenSegDecoder 1.0]
+Progress: Parameterizing module SevenSegDecoder_5
+Progress: Adding UART_RX_0 [UART_RX 1.0]
+Progress: Parameterizing module UART_RX_0
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 22.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: TermProject.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: TermProject.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: TermProject.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: TermProject.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: TermProject: Generating TermProject "TermProject" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src1 and cmd_mux_001.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src1 and rsp_mux_001.sink1
+Info: ClockDivider_0: "TermProject" instantiated ClockDivider "ClockDivider_0"
+Info: SevenSegDecoder_0: "TermProject" instantiated SevenSegDecoder "SevenSegDecoder_0"
+Info: UART_RX_0: "TermProject" instantiated UART_RX "UART_RX_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "TermProject" instantiated altera_hps "hps_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "TermProject" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "TermProject" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: ClockDivider_0_avalon_slave_0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "ClockDivider_0_avalon_slave_0_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: ClockDivider_0_avalon_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "ClockDivider_0_avalon_slave_0_agent"
+Info: ClockDivider_0_avalon_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "ClockDivider_0_avalon_slave_0_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/TermProject/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: ClockDivider_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "ClockDivider_0_avalon_slave_0_burst_adapter"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/TermProject/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/TermProject/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/TermProject/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/TermProject/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: TermProject: Done "TermProject" with 26 modules, 88 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,353 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.1 win64 Jan 23 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do My_UART_RX_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is robin@CRLT7557.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.1 Lib Mapping Utility 2023.01 Jan 23 2023
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/23.2/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/CustomIP/My_UART_RX {C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/CustomIP/My_UART_RX/LoadReg.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:23:54 on Dec 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/CustomIP/My_UART_RX" C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/CustomIP/My_UART_RX/LoadReg.v 
+# -- Compiling module LoadReg
+# 
+# Top level modules:
+# 	LoadReg
+# End time: 12:23:54 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:24:50 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:24:50 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:24:50 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:24:50 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:24:50 on Dec 09,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'T1'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (9) for port 'chipselect'. The port definition is at: ../../LoadReg.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'RX_data'. The port definition is at: ../../LoadReg.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: ../../LoadReg.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3722) testbench.v(14): [TFMPC] - Missing connection for port 'readdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/RX_in'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** UI-Msg (Warning): (vish-4014) No objects found matching 'binary'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/state'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** UI-Msg (Warning): (vish-4014) No objects found matching 'binary'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/error'.
+# Executing ONERROR command at macro ./wave.do line 7
+do testbench.tcl
+# End time: 12:28:43 on Dec 09,2023, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 6
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:28:43 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:28:43 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:28:43 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:28:43 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:28:43 on Dec 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'T1'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (9) for port 'chipselect'. The port definition is at: ../../LoadReg.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'RX_data'. The port definition is at: ../../LoadReg.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: ../../LoadReg.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3722) testbench.v(14): [TFMPC] - Missing connection for port 'readdata'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/RX_in'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** UI-Msg (Warning): (vish-4014) No objects found matching 'binary'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/state'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** UI-Msg (Warning): (vish-4014) No objects found matching 'binary'.
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/T1/error'.
+# Executing ONERROR command at macro ./wave.do line 7
+do testbench.tcl
+# End time: 12:29:24 on Dec 09,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 6
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:29:24 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:29:24 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:29:24 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:29:25 on Dec 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:29:25 on Dec 09,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'T1'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (9) for port 'chipselect'. The port definition is at: ../../LoadReg.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'RX_data'. The port definition is at: ../../LoadReg.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: ../../LoadReg.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/T1 File: testbench.v Line: 14
+# ** Warning: (vsim-3722) testbench.v(14): [TFMPC] - Missing connection for port 'readdata'.
+do testbench.tcl
+# End time: 12:30:28 on Dec 09,2023, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 5
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:30:28 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:30:29 on Dec 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:30:29 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:30:29 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:30:29 on Dec 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+do testbench.tcl
+# End time: 12:31:41 on Dec 09,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:31:41 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:31:41 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:31:41 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:31:41 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:31:41 on Dec 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# ** Error: (vopt-10) Problem closing asm file "C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Term_Project/CustomIP/My_UART_RX/simulation/questa/rtl_work/@_opt1/vopt38kyfw".
+# Invalid argument. (errno = EINVAL)
+# testbench.v(70): Vopt Compiler exiting
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 7.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./testbench.tcl PAUSED at line 9
+do testbench.tcl
+# End time: 12:32:09 on Dec 09,2023, Elapsed time: 0:00:28
+# Errors: 2, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:32:09 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:32:09 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:32:09 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:32:09 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:32:09 on Dec 09,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+do testbench.tcl
+# End time: 12:35:15 on Dec 09,2023, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:35:15 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:35:15 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:35:15 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:35:15 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:35:15 on Dec 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+do testbench.tcl
+# End time: 12:37:12 on Dec 09,2023, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:37:12 on Dec 09,2023
+# vlog -reportprogress 300 ../../LoadReg.v ../../My_UART_RX.v ../../UART_Rx.v 
+# -- Compiling module LoadReg
+# -- Compiling module My_UART_RX
+# -- Compiling module UART_Rx
+# 
+# Top level modules:
+# 	My_UART_RX
+# End time: 12:37:12 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 12:37:13 on Dec 09,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:37:13 on Dec 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 12:37:13 on Dec 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# do_write(): BLOCKFILE ERROR (write): unexpected error (errno = 22)
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.LoadReg(fast)
+# End time: 14:41:00 on Dec 09,2023, Elapsed time: 2:03:47
+# Errors: 0, Warnings: 1

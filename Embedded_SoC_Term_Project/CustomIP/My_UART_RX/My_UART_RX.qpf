@@ -1,0 +1,6 @@
+DATE = "11:20:33 November 09, 2023"
+QUARTUS_VERSION = "16.0.2"
+
+# Revisions
+
+PROJECT_REVISION = "My_UART_RX"

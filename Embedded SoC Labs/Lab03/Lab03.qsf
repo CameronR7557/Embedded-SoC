@@ -1,0 +1,122 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSXFC6D6F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY "Lab03"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.2
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:31:06 OCTOBER 16,2023"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_clk
+set_location_assignment PIN_AF14 -to clk_clk
+
+#============================================================
+# SW
+#============================================================
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to switches_export[9]
+set_location_assignment PIN_AB30 -to switches_export[0]
+set_location_assignment PIN_Y27 -to switches_export[1]
+set_location_assignment PIN_AB28 -to switches_export[2]
+set_location_assignment PIN_AC30 -to switches_export[3]
+set_location_assignment PIN_W25 -to switches_export[4]
+set_location_assignment PIN_V25 -to switches_export[5]
+set_location_assignment PIN_AC28 -to switches_export[6]
+set_location_assignment PIN_AD30 -to switches_export[7]
+set_location_assignment PIN_AC29 -to switches_export[8]
+set_location_assignment PIN_AA30 -to switches_export[9]
+
+#============================================================
+# Seg7
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex0_export[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex1_export[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex2_export[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to hex3_export[6]
+set_location_assignment PIN_W17 -to hex0_export[0]
+set_location_assignment PIN_V18 -to hex0_export[1]
+set_location_assignment PIN_AG17 -to hex0_export[2]
+set_location_assignment PIN_AG16 -to hex0_export[3]
+set_location_assignment PIN_AH17 -to hex0_export[4]
+set_location_assignment PIN_AG18 -to hex0_export[5]
+set_location_assignment PIN_AH18 -to hex0_export[6]
+set_location_assignment PIN_AF16 -to hex1_export[0]
+set_location_assignment PIN_V16 -to hex1_export[1]
+set_location_assignment PIN_AE16 -to hex1_export[2]
+set_location_assignment PIN_AD17 -to hex1_export[3]
+set_location_assignment PIN_AE18 -to hex1_export[4]
+set_location_assignment PIN_AE17 -to hex1_export[5]
+set_location_assignment PIN_V17 -to hex1_export[6]
+set_location_assignment PIN_AA21 -to hex2_export[0]
+set_location_assignment PIN_AB17 -to hex2_export[1]
+set_location_assignment PIN_AA18 -to hex2_export[2]
+set_location_assignment PIN_Y17 -to hex2_export[3]
+set_location_assignment PIN_Y18 -to hex2_export[4]
+set_location_assignment PIN_AF18 -to hex2_export[5]
+set_location_assignment PIN_W16 -to hex2_export[6]
+set_location_assignment PIN_Y19 -to hex3_export[0]
+set_location_assignment PIN_W19 -to hex3_export[1]
+set_location_assignment PIN_AD19 -to hex3_export[2]
+set_location_assignment PIN_AA20 -to hex3_export[3]
+set_location_assignment PIN_AC20 -to hex3_export[4]
+set_location_assignment PIN_AA19 -to hex3_export[5]
+set_location_assignment PIN_AD20 -to hex3_export[6]
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE Lab03/synthesis/Lab03.qip
+set_global_assignment -name SDC_FILE Lab03.SDC
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

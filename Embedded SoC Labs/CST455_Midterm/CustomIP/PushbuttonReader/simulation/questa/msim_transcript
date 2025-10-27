@@ -1,0 +1,119 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.1 win64 Jan 23 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do PushbuttonReader_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.1 Lib Mapping Utility 2023.01 Jan 23 2023
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/23.2/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/CST455_Midterm/CustomIP/PushbuttonReader {C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/CST455_Midterm/CustomIP/PushbuttonReader/PushbuttonReader.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:41:59 on Oct 29,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/CST455_Midterm/CustomIP/PushbuttonReader" C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/CST455_Midterm/CustomIP/PushbuttonReader/PushbuttonReader.v 
+# -- Compiling module PushbuttonReader
+# 
+# Top level modules:
+# 	PushbuttonReader
+# End time: 15:41:59 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:44:07 on Oct 29,2023
+# vlog -reportprogress 300 ../../PushbuttonReader.v 
+# -- Compiling module PushbuttonReader
+# 
+# Top level modules:
+# 	PushbuttonReader
+# End time: 15:44:07 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:44:07 on Oct 29,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# ** Error: (vlog-13069) testbench.v(38): near "<=": syntax error, unexpected <=.
+# End time: 15:44:07 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_pro/23.2/questa_fse/win64/vlog failed.
+# Error in macro ./testbench.tcl line 7
+# C:/intelFPGA_pro/23.2/questa_fse/win64/vlog failed.
+#     while executing
+# "vlog *.v"
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:44:57 on Oct 29,2023
+# vlog -reportprogress 300 ../../PushbuttonReader.v 
+# -- Compiling module PushbuttonReader
+# 
+# Top level modules:
+# 	PushbuttonReader
+# End time: 15:44:57 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:44:57 on Oct 29,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:44:57 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 15:44:57 on Oct 29,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench(fast)
+# Loading work.PushbuttonReader(fast)
+do testbench.tcl
+# End time: 15:48:06 on Oct 29,2023, Elapsed time: 0:03:09
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:48:06 on Oct 29,2023
+# vlog -reportprogress 300 ../../PushbuttonReader.v 
+# -- Compiling module PushbuttonReader
+# 
+# Top level modules:
+# 	PushbuttonReader
+# End time: 15:48:06 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.1 Compiler 2023.01 Jan 23 2023
+# Start time: 15:48:06 on Oct 29,2023
+# vlog -reportprogress 300 testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:48:06 on Oct 29,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.testbench -Lf 220model -Lf altera_mf_ver -Lf verilog -L work -voptargs=""+acc"" 
+# Start time: 15:48:06 on Oct 29,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench(fast)
+# Loading work.PushbuttonReader(fast)
+# End time: 15:51:43 on Oct 29,2023, Elapsed time: 0:03:37
+# Errors: 0, Warnings: 0

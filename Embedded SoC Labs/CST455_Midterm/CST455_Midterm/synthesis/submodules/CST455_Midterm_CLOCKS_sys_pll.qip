@@ -1,0 +1,4 @@
+set_instance_assignment -name PLL_COMPENSATION_MODE DIRECT -to "*CST455_Midterm_CLOCKS_sys_pll*|altera_pll:altera_pll_i*|*"
+ 
+set_instance_assignment -name PLL_AUTO_RESET OFF -to "*CST455_Midterm_CLOCKS_sys_pll*|altera_pll:altera_pll_i*|*"
+set_instance_assignment -name PLL_BANDWIDTH_PRESET AUTO -to "*CST455_Midterm_CLOCKS_sys_pll*|altera_pll:altera_pll_i*|*"

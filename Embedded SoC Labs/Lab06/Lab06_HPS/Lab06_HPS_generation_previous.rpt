@@ -1,0 +1,107 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Lab06\Lab06_HPS.qsys --block-symbol-file --output-directory=C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Lab06\Lab06_HPS --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Lab06/Lab06_HPS.qsys
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX2
+Progress: Adding LEDs [altera_avalon_pio 22.1]
+Progress: Parameterizing module LEDs
+Progress: Adding Switches [altera_avalon_pio 22.1]
+Progress: Parameterizing module Switches
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 22.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Lab06_HPS.Switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Lab06_HPS.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: Lab06_HPS.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Lab06_HPS.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: Lab06_HPS.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Lab06\Lab06_HPS.qsys --synthesis=VERILOG --output-directory=C:\Users\robin\OneDrive\Desktop\CST455\cst455-labs\Lab06\Lab06_HPS\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading Lab06/Lab06_HPS.qsys
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 22.1]
+Progress: Parameterizing module HEX2
+Progress: Adding LEDs [altera_avalon_pio 22.1]
+Progress: Parameterizing module LEDs
+Progress: Adding Switches [altera_avalon_pio 22.1]
+Progress: Parameterizing module Switches
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 22.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Lab06_HPS.Switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: Lab06_HPS.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: Lab06_HPS.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Lab06_HPS.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: Lab06_HPS.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: Lab06_HPS: Generating Lab06_HPS "Lab06_HPS" for QUARTUS_SYNTH
+Info: HEX0: Starting RTL generation for module 'Lab06_HPS_HEX0'
+Info: HEX0:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab06_HPS_HEX0 --dir=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0002_HEX0_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0002_HEX0_gen//Lab06_HPS_HEX0_component_configuration.pl  --do_build_sim=0  ]
+Info: HEX0: Done RTL generation for module 'Lab06_HPS_HEX0'
+Info: HEX0: "Lab06_HPS" instantiated altera_avalon_pio "HEX0"
+Info: LEDs: Starting RTL generation for module 'Lab06_HPS_LEDs'
+Info: LEDs:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab06_HPS_LEDs --dir=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0003_LEDs_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0003_LEDs_gen//Lab06_HPS_LEDs_component_configuration.pl  --do_build_sim=0  ]
+Info: LEDs: Done RTL generation for module 'Lab06_HPS_LEDs'
+Info: LEDs: "Lab06_HPS" instantiated altera_avalon_pio "LEDs"
+Info: Switches: Starting RTL generation for module 'Lab06_HPS_Switches'
+Info: Switches:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Lab06_HPS_Switches --dir=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0004_Switches_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/robin/AppData/Local/Temp/alt9675_4896774285344799373.dir/0004_Switches_gen//Lab06_HPS_Switches_component_configuration.pl  --do_build_sim=0  ]
+Info: Switches: Done RTL generation for module 'Lab06_HPS_Switches'
+Info: Switches: "Lab06_HPS" instantiated altera_avalon_pio "Switches"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: hps_0: "Lab06_HPS" instantiated altera_hps "hps_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Lab06_HPS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "Lab06_HPS" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: LEDs_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "LEDs_s1_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: LEDs_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "LEDs_s1_agent"
+Info: LEDs_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "LEDs_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: hps_0_h2f_lw_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_lw_axi_master_wr_limiter"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab06/Lab06_HPS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: LEDs_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "LEDs_s1_burst_adapter"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab06/Lab06_HPS/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab06/Lab06_HPS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/robin/OneDrive/Desktop/CST455/cst455-labs/Lab06/Lab06_HPS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Lab06_HPS: Done "Lab06_HPS" with 24 modules, 81 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
